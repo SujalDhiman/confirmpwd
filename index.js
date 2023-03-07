@@ -50,8 +50,13 @@ function clear()
 {
     let msg1=document.querySelector(".msg")
     msg1.innerText=""
-
+    try
+    {
     let btn1=document.querySelector("button")
     btn1.parentNode.removeChild(btn1)
-
+    }
+    catch(err)
+    {
+        console.log("")
+    }
 }
